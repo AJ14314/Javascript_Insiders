@@ -59,5 +59,5 @@ incase of variable it gives undefined and incase of functions it give the functi
 
 Even before execution the momory is allocated to variables and functions
 
-## If any function is arrow function it behaves like variable
+## If any function is arrow function or = function(){} it behaves like variable
 video4.js:- Part 6/7:-  it allocats undefined to getName because of arrow function
