@@ -9,7 +9,6 @@ Kind of box/container in which whole javascript is execute
 ###### JS is "synchronous" "single-threaded" language
 one command at a time, in specific order.
 
-<<<<<<< HEAD
 Execution conetxt created in 2 phases:-
 1. Creation Phase/Memory creation phase
 2. Code Execution Phase
@@ -43,5 +42,5 @@ square2 will updated to 4 (execution context of the function will be deleted)
 
 then same for square(4) and update the square4:16 replace undefined
 Once execution done: complete execution context will be deleted
-=======
->>>>>>> 732fc458cc8b36af740a86b5c10f6b3b4a70dede
+
+
