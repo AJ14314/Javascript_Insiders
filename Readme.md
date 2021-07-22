@@ -6,5 +6,5 @@ Execution Context:-
 1. Memory component/variable environment:- variables and functions are stored
 2. code component/thread of execution:- whole code is excuted line by line
 
-#JS is "synchronous" "single-threaded" language
+# JS is "synchronous" "single-threaded" language
 one command at a time, in specific order.
