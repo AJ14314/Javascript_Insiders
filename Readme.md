@@ -43,4 +43,21 @@ square2 will updated to 4 (execution context of the function will be deleted)
 then same for square(4) and update the square4:16 replace undefined
 Once execution done: complete execution context will be deleted
 
+Everything from Execution context till excution will be managed by JS engine using "Callstack"
+At the bottom of the stack is GLOBAL EXECUTION CONTEXT then whole Execution Context will be pushed to stack
 
+After execution the call stack will get empty
+
+## Call stack maintains the order of execution of execution contexts
+call stack/execution context stack/program stack/control stack/runtime stack/machine stack
+
+## Video 4
+## HOISTING in JS
+
+HOISTING:- we can access variables and functions even before initializing it
+incase of variable it gives undefined and incase of functions it give the function
+
+Even before execution the momory is allocated to variables and functions
+
+## If any function is arrow function it behaves like variable
+video4.js:- Part 6/7:-  it allocats undefined to getName because of arrow function
