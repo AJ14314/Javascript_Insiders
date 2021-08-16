@@ -61,3 +61,62 @@ Even before execution the momory is allocated to variables and functions
 
 ## If any function is arrow function or = function(){} it behaves like variable
 video4.js:- Part 6/7:-  it allocats undefined to getName because of arrow function
+
+
+Video 8:- lexical environment is the local memory along with the reference of lexical environment of the parent.
+lexical means in hierarchy or sequence
+function c is lexically sitting inside function a
+function a(){
+    var b = 10;
+    function c(){
+        console.log(b);
+    }
+}
+
+In case of global execution context the lexical environment of parent pointing to null.
+if variable is not present in local memory, it finds the variable in lexical environment of parent if not in the parent then parent of parent and soo on.....
+
+Line 77 is called "SCOPE CHAIN".
+
+Temporal Dead Zone:- let and const are hoisted but differently then var and they are in temporal dead zone.
+
+let is under SCRIPT:- with undefined and if we access before initialization we get ReferenceError: cannot access a before initialization.
+
+Temporal Dead Zone:- is the time between let is hoisted and it's initialization.
+
+If we try to access any variable which is not in our code we get ReferenceError: x in not defined.
+
+let and const are not present in global object.
+
+if two let variable, we try to redeclare we get SyntxError: Identifier 'a' has already been declared.
+
+Redeclaration is not possible in case of let within same scope.
+
+CONST without initialization SyntaxError: Missing initializer in const declaration.
+
+If we reassign to CONST TypeError: Assignment to const variable.
+
+{}:- it is a block also called compound statement and used to combine multiple JS statement into 1 group.
+
+Group of statements where JS expects as single statement. ex:- if(true) true; using block if(true){anything that we want to do}
+
+{
+    var a = 10;
+    let b = 20; // will in Block scope under glabal execution context
+    const c = 30; // will in Block scope under glabal execution context
+}
+
+SHADOWING IN JS:- 
+var a = 100;
+{
+    var a = 10;
+    let b = 20; 
+    const c = 30; 
+    console.log(a); //10
+}
+console.log(a);//10 because a got shadowed and updated to 10 in the global memory itself.
+
+
+CLOSURE:- it is a function which along with it's lexical environment
+If function is returned then it is returned with it's lexical scope.
+

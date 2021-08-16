@@ -70,3 +70,16 @@ var getName = () => {
 var getName2 = function () {
     console.log("Anand Jain")
 }
+
+//test
+const shape = {
+    radius: 10,
+    diamter() {
+        return this.radius * 2
+    },
+    p: () => 2 * Math.PI * this.radius
+}
+
+console.log(shape.diamter());
+console.log(shape.p());
+console.log(typeof shape.p());

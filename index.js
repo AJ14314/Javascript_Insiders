@@ -1,7 +1,7 @@
-var n = 2;
-function square(num) {
-    var ans = num * num;
-    return ans;
+var a = 10;
+function f() {
+    var a = 20;
+    console.log(a);
 }
-var square2 = square(n);
-var square4 = square(4);
+f();
+console.log(a);
